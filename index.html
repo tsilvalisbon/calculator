@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="styles.css"></style>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <h1>Calculator</h1>
+    <div id="calculator" class="calculator" aria-label="Calculator">
+        <div id="display" class="display" aria-label="Calculator display">
+            <div class="history muted" id="history" aria-hidden="true"></div>
+            <div class="current" id="current" role="status" aria-live="polite">0</div>
+        </div>
+        <div class="keys">
+            <button type="button" class="key number" aria-label="7">7</button>
+            <button type="button" class="key number" aria-label="8">8</button>
+            <button type="button" class="key number" aria-label="9">9</button>
+            <button type="button" class="key operator" aria-label="divide">/</button>
+
+            <button type="button" class="key number" aria-label="4">4</button>
+            <button type="button" class="key number" aria-label="5">5</button>
+            <button type="button" class="key number" aria-label="6">6</button>
+            <button type="button" class="key operator" aria-label="multiply">*</button>
+
+            <button type="button" class="key number" aria-label="1">1</button>
+            <button type="button" class="key number" aria-label="2">2</button>
+            <button type="button" class="key number" aria-label="3">3</button>
+            <button type="button" class="key operator" aria-label="subtract">-</button>
+
+            <button type="button" class="key zero number" aria-label="0">0</button>
+            <button type="button" class="key" id="clear" aria-label="clear">C</button>
+            <button type="button" class="key operator" aria-label="add">+</button>
+            <button type="button" class="key equal" id="equals" aria-label="equals">=</button>
+        </div>
+    </div>
 </body>
 </html>
